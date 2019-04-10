@@ -1,0 +1,25 @@
+<?php
+namespace Packt\Magenest\Model;
+class MagenestMovieActor extends
+    \Magento\Framework\Model\AbstractModel {
+//    const STATUS_PENDING = 'pending';
+//    const STATUS_APPROVED = 'approved';
+//    const STATUS_DECLINED = 'declined';
+    public function __construct(
+        \magento\Framework\Model\Context $context,
+        \magento\Framework\Registry $registry,
+        \magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
+        \magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
+        array $data = []
+    ) {
+
+        parent::__construct($context, $registry, $resource,
+            $resourceCollection, $data);
+    }
+    public function _construct() {
+        $this->_init('Packt\Magenest\Model\ResourceModel\MagenestMovieActor');
+//        $this->_init('Packt\Magenest\Model\ResourceModel\MagenestActor');
+//        $this->_init('Packt\Magenest\Model\ResourceModel\MagenestDirector');
+//        $this->_init('Packt\Magenest\Model\ResourceModel\MagenestMovieActor');
+    }
+}
