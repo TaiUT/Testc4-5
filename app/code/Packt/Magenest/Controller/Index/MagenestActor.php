@@ -8,7 +8,7 @@ class MagenestActor extends \magento\Framework\App\Action\Action
     {
         $magenestmovie = $this->_objectManager ->create('Packt\Magenest\Model\MagenestActor');
         $magenestmovie->setActorId('');
-        $magenestmovie->setName('Nguyen Van b');
+        $magenestmovie->setName('Nguyen Van d');
 
 
         $magenestmovie->save();

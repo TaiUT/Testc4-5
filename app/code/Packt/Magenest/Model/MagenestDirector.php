@@ -9,12 +9,10 @@ class MagenestDirector extends
         \magento\Framework\Model\Context $context,
         \magento\Framework\Registry $registry,
         \magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
-        \magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
-        array $data = []
+        \magento\Framework\Data\Collection\AbstractDb $resourceCollection = null, array $data = []
     ) {
 
-        parent::__construct($context, $registry, $resource,
-            $resourceCollection, $data);
+        parent::__construct($context, $registry, $resource, $resourceCollection, $data);
     }
     public function _construct() {
         $this->_init('Packt\Magenest\Model\ResourceModel\MagenestDirector');

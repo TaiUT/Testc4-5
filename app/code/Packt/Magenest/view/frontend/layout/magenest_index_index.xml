@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+      layout="2columns-left" xsi:noNamespaceSchemaLocation=
+              "urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <title>Magenest Landingspage</title>
+        <title>Magenest Test</title>
     </head>
     <body>
         <remove name="wishlist_sidebar" />
         <referenceContainer name="content">
-            <!--<block class="Packt\Magenest\Block\Result"-->
-                   <!--name="show_reult" template="Packt_Magenest::result.phtml" />-->
             <block class="Packt\Magenest\Block\Data"
-                   name="show_data" template="Packt_Magenest::showdata.phtml"/>
+                   name="landingsblock" template="Packt_Magenest::showdata.phtml" />
         </referenceContainer>
     </body>
 </page>
